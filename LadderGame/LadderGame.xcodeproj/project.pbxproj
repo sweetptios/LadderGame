@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA77FDB238027610090BF3E /* LadderGameLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA77FDA238027610090BF3E /* LadderGameLibrary */; };
+		3BFC7439238042760097572D /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3BFC7438238042760097572D /* ReactorKit */; };
 		83C3EB8B23796EAE00AC645B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3EB8A23796EAE00AC645B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,17 +34,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFC7439238042760097572D /* ReactorKit in Frameworks */,
+				3BA77FDB238027610090BF3E /* LadderGameLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA77FD72380242F0090BF3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83C3EB7E23796EAE00AC645B = {
 			isa = PBXGroup;
 			children = (
 				83C3EB8923796EAE00AC645B /* LadderGame */,
 				83C3EB8823796EAE00AC645B /* Products */,
+				3BA77FD72380242F0090BF3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +90,10 @@
 			dependencies = (
 			);
 			name = LadderGame;
+			packageProductDependencies = (
+				3BA77FDA238027610090BF3E /* LadderGameLibrary */,
+				3BFC7438238042760097572D /* ReactorKit */,
+			);
 			productName = LadderGame;
 			productReference = 83C3EB8723796EAE00AC645B /* LadderGame */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 83C3EB7E23796EAE00AC645B;
+			packageReferences = (
+				3BFC7437238042760097572D /* XCRemoteSwiftPackageReference "ReactorKit" */,
+			);
 			productRefGroup = 83C3EB8823796EAE00AC645B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +301,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BFC7437238042760097572D /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BA77FDA238027610090BF3E /* LadderGameLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LadderGameLibrary;
+		};
+		3BFC7438238042760097572D /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BFC7437238042760097572D /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83C3EB7F23796EAE00AC645B /* Project object */;
 }
