@@ -1,7 +1,7 @@
 # LadderGame
 Let'Swift 2019 워크숍 실습
 
-간단한 사다리게임 화면을 구현하면서 clean architecture를 적용해보는 실습이었다.
+화면이 1개인 사다리게임 화면을 구현하면서 clean architecture를 적용해보는 실습이었다.
 
 clean architecture를 기반으로 여러 디자인 패턴을 적용해봤다.
 
