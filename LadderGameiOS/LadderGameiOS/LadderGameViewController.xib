@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LadderGameViewController" customModule="LadderGameiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="heightTextField" destination="dHd-ee-umd" id="fz5-kD-g4B"/>
+                <outlet property="ladderView" destination="Tez-jv-QEu" id="Xgq-xO-rYk"/>
+                <outlet property="namesTextField" destination="Cy6-LY-DEB" id="C5Q-x5-vf9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사다리높이(ex. 10)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-ee-umd">
+                    <rect key="frame" x="142" y="115" width="130" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="bMx-MS-0vb"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="참여자이름나열(ex.  a,b,c,d,e)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cy6-LY-DEB">
+                    <rect key="frame" x="97" y="217" width="220" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="aLI-KN-Bsq"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exj-dH-sV2">
+                    <rect key="frame" x="159.5" y="324" width="95" height="30"/>
+                    <state key="normal" title="사다리게임 시작"/>
+                    <connections>
+                        <action selector="ladderButtonPressed:" destination="-1" eventType="touchUpInside" id="dMO-3C-wcT"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-jv-QEu">
+                    <rect key="frame" x="47" y="384" width="320" height="407"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="407" id="4Kc-cp-c37"/>
+                        <constraint firstAttribute="width" constant="320" id="vI4-JH-7wt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tez-jv-QEu" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ClF-Kw-wYz"/>
+                <constraint firstItem="dHd-ee-umd" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="CwT-TB-itG"/>
+                <constraint firstItem="exj-dH-sV2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K85-tq-tEH"/>
+                <constraint firstItem="Tez-jv-QEu" firstAttribute="top" secondItem="exj-dH-sV2" secondAttribute="bottom" constant="30" id="R1G-s0-47j"/>
+                <constraint firstItem="exj-dH-sV2" firstAttribute="top" secondItem="Cy6-LY-DEB" secondAttribute="bottom" constant="73" id="VUD-zz-cxl"/>
+                <constraint firstItem="Cy6-LY-DEB" firstAttribute="top" secondItem="dHd-ee-umd" secondAttribute="bottom" constant="68" id="eRU-MU-Gl6"/>
+                <constraint firstItem="dHd-ee-umd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="71" id="fcD-sT-qfS"/>
+                <constraint firstItem="Cy6-LY-DEB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yII-tj-aYn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+</document>
